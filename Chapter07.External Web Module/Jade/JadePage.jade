@@ -1,0 +1,25 @@
+!!! 5
+html
+	head
+		title Index Page
+		style
+			* { margin:0px; padding:0px; }
+			h1 { color:Red; }
+		script(src='http://code.jquery.com/jquery.js')
+		script
+			$(document).ready(function() {
+				var alpha = 10;
+			});
+	body
+		// JADE STRING
+		#header
+			h1 #{name} .. !
+			h2= description
+		hr
+		.article
+			- for(var i=0; i < 10; i++ ) {
+				a(href = "http://hanb.co.kr", data-test="multiple Attribute") Go To Hanbit Media #{i}
+				br
+			- }
+		
+		
